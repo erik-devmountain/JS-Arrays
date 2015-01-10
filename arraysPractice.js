@@ -208,7 +208,16 @@ for(var i = 0; i < num2; i++){
 //Above is some code that adds a random number to both arr1 and arr2.
 //Write a function that is given arr1 and arr2 is it's only arguments. Return the array which is longest.
 
-  //Code Here
+var arrCompare = function(arr1, arr2) {
+  if (arr1.length > arr2.length) {
+    console.log("arr1 is longer");
+    return arr1;
+  }
+  else {
+    console.log("arr2 is longer");
+    return arr2;
+  }
+}
 
 
 /*As a continuation of the previous problem, write another function called 'both'.
@@ -216,4 +225,23 @@ for(var i = 0; i < num2; i++){
   'both' should return a new array full of numbers that are found in both arr1 and arr2.
 */
 
-  //Code Here
+var both = function(arr1, arr2) {
+  var arr3 = [];
+  for (var i = 0; i < 31; i++) {
+    if ((arr1[i] === arr2[i]) && (arr1[i] !== undefined) && (arr2[i] !== undefined)) {
+      arr3.push(arr1[i]);
+    }
+  }
+  return arr3;
+}
+
+var both2 = function(arr1, arr2) {
+  
+}
+
+
+
+
+
+
+
